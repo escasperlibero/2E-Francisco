@@ -1,0 +1,30 @@
+1. Inicialize o vetor com os elementos: [9,5,7,2,6,1,3,0,4,8].
+2. Defina uma variável booleana "troca" como verdadeira.
+3. Crie um loop enquanto "troca" for verdadeira.
+4. Defina a variável "troca" como falsa.
+5. Percorra todos os elementos do vetor, exceto o último.
+6. Compare o elemento atual com o próximo elemento.
+7. Se o elemento atual for maior que o próximo elemento, faça a troca.
+8. Defina a variável "troca" como verdadeira.
+9. Repita os passos 5 a 8 até o final do vetor.
+10. Quando o loop terminar, imprima o vetor ordenado: [0,1,2,3,4,5,6,7,8,9].
+
+Algoritmo em Python:
+
+def bubbleSort(vetor):
+    tamanho = len(vetor)
+    troca = True
+
+    while troca:
+        troca = False
+        
+        for i in range(tamanho-1):
+            if vetor[i] > vetor[i+1]:
+                vetor[i], vetor[i+1] = vetor[i+1], vetor[i]
+                troca = True
+    
+    return vetor
+
+vetor = [9,5,7,2,6,1,3,0,4,8]
+vetor_ordenado = bubbleSort(vetor)
+print(vetor_ordenado)
