@@ -1,0 +1,65 @@
+Árvore para a lista 1:
+
+         45
+       /    \
+    20       60
+   /  \        \
+  7    30       81
+ \         /    /  \
+  8      97   100
+ /
+4
+
+ Para adicionar um valor na árvore acima, por exemplo o valor 25:
+ 
+          45
+       /    \
+    20       60
+   /  \        \
+  7    30       81
+ \         /    /  \
+  8      97   100
+ / \
+4   25
+
+ Para remover o valor 30 da árvore acima (nó com dois filhos), podemos substituí-lo pelo maior valor do seu subárvore esquerda, que seria o 25:
+ 
+          45
+       /    \
+    20       60
+   /  \        \
+  7    25       81
+ \         /    /  \
+  8      97   100
+ /
+4
+
+ Árvore para a lista 2:
+ 
+         15
+       /  \
+     6     18
+   /  \   /  \
+  3    7  16  20
+ /
+4
+
+ Para adicionar um valor na árvore acima, por exemplo o valor 12:
+ 
+         15
+       /  \
+     6     18
+   /  \   /  \
+  3    7  16  20
+ / \
+4   12
+
+Para remover o valor 6 da árvore acima (nó com dois filhos), podemos substituí-lo pelo menor valor do seu subárvore direita, que seria o 7: ` 15 / \
+
+        18
+
+/ / \
+
+        16 20
+
+/ 4 `
