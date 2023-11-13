@@ -1,0 +1,35 @@
+
+```javascript
+// src/utils/mensagem.js
+
+const obterMensagem = () => {
+  return "Esta é a minha mensagem personalizada!";
+};
+
+export default obterMensagem;
+```
+
+Agora, você pode importar e usar essa função em qualquer lugar do seu projeto React. Por exemplo, no arquivo `App.js`:
+
+```jsx
+// src/App.js
+
+import React from 'react';
+import obterMensagem from './utils/mensagem';
+import './App.css';
+
+function App() {
+  const mensagem = obterMensagem();
+
+  return (
+    <div className="App">
+      <header className="App-header">
+        <h1>{mensagem}</h1>
+      </header>
+    </div>
+  );
+}
+
+export default App;
+```
+
