@@ -1,0 +1,47 @@
+
+1. Crie um novo arquivo chamado `ComponenteComProps.js` dentro da pasta `src/components`:
+
+```jsx
+// src/components/ComponenteComProps.js
+
+import React from 'react';
+
+const ComponenteComProps = (props) => {
+  return (
+    <div>
+      <h2>Componente com Props</h2>
+      <p>Valor recebido via props: {props.valor}</p>
+    </div>
+  );
+};
+
+export default ComponenteComProps;
+```
+
+2. Agora, no arquivo `App.js`, importe e use o novo componente `ComponenteComProps`, passando um valor via `props`:
+
+```jsx
+// src/App.js
+
+import React from 'react';
+import ComponenteComProps from './components/ComponenteComProps';
+import './App.css';
+
+function App() {
+  const valorParaProps = "Um valor qualquer";
+
+  return (
+    <div className="App">
+      <header className="App-header">
+        <h1>Meu Projeto React</h1>
+        <ComponenteComProps valor={valorParaProps} />
+      </header>
+    </div>
+  );
+}
+
+export default App;
+```
+
+3. Certifique-se de que o servidor de desenvolvimento esteja em execução (`npm start`), e você verá o componente `ComponenteComProps` renderizado com o valor passado via `props`.
+
