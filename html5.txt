@@ -1,0 +1,95 @@
+
+1. **Metadados (meta):**
+   - Descrevendo a codificação da página:
+
+     ```html
+     <!DOCTYPE html>
+     <html lang="en">
+     <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Página Exemplo</title>
+     </head>
+     <body>
+       <!-- Conteúdo da página -->
+     </body>
+     </html>
+     ```
+
+2. **Separação de Conteúdo (div):**
+   - Dividindo a página em seções:
+
+     ```html
+     <div id="header">
+       <!-- Conteúdo do cabeçalho -->
+     </div>
+     <div id="main-content">
+       <!-- Conteúdo principal -->
+     </div>
+     <div id="footer">
+       <!-- Conteúdo do rodapé -->
+     </div>
+     ```
+
+3. **Texto (p, h1-h6):**
+   - Usando parágrafos e cabeçalhos:
+
+     ```html
+     <h1>Título Principal</h1>
+     <p>Este é um parágrafo de texto.</p>
+     <h2>Subtítulo</h2>
+     <p>Outro parágrafo de texto.</p>
+     ```
+
+4. **Imagem (img):**
+   - Adicionando uma imagem à página:
+
+     ```html
+     <img src="caminho/para/imagem.jpg" alt="Descrição da Imagem">
+     ```
+
+   - Com uma legenda:
+
+     ```html
+     <figure>
+       <img src="caminho/para/imagem.jpg" alt="Descrição da Imagem">
+       <figcaption>Legenda da Imagem</figcaption>
+     </figure>
+     ```
+
+5. **Formulário (form, input, button):**
+   - Criando um formulário simples:
+
+     ```html
+     <form action="/enviar-dados" method="post">
+       <label for="nome">Nome:</label>
+       <input type="text" id="nome" name="nome" required>
+
+       <label for="email">E-mail:</label>
+       <input type="email" id="email" name="email" required>
+
+       <button type="submit">Enviar</button>
+     </form>
+     ```
+
+   - Formulário com seleção de gênero:
+
+     ```html
+     <form action="/enviar-dados" method="post">
+       <label for="nome">Nome:</label>
+       <input type="text" id="nome" name="nome" required>
+
+       <label for="email">E-mail:</label>
+       <input type="email" id="email" name="email" required>
+
+       <label>Gênero:</label>
+       <input type="radio" id="masculino" name="genero" value="masculino" required>
+       <label for="masculino">Masculino</label>
+
+       <input type="radio" id="feminino" name="genero" value="feminino" required>
+       <label for="feminino">Feminino</label>
+
+       <button type="submit">Enviar</button>
+     </form>
+     ```
+
