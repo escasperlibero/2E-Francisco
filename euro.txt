@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lugares Turísticos da Europa</title>
+  <!-- Adicione aqui seus estilos ou links para folhas de estilo externas -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 1em;
+      text-align: center;
+    }
+
+    section {
+      margin: 2em;
+    }
+
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1em;
+      margin: 1em;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    img {
+      width: 100%;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Lugares Turísticos da Europa</h1>
+  </header>
+
+  <section>
+    <div class="card">
+      <h2>Paris, França</h2>
+      <img src="paris.jpg" alt="Torre Eiffel em Paris">
+      <p>Paris é conhecida como a Cidade Luz, famosa por sua arquitetura deslumbrante e cultura vibrante.</p>
+    </div>
+
+    <div class="card">
+      <h2>Roma, Itália</h2>
+      <img src="roma.jpg" alt="Coliseu em Roma">
+      <p>Roma, a Cidade Eterna, é rica em história, com monumentos como o Coliseu e o Fórum Romano.</p>
+    </div>
+
+    <div class="card">
+      <h2>Barcelona, Espanha</h2>
+      <img src="barcelona.jpg" alt="Parque Güell em Barcelona">
+      <p>Barcelona oferece arquitetura única, praias incríveis e uma cena artística e gastronômica vibrante.</p>
+    </div>
+  </section>
+
+  <!-- Adicione mais seções e cards conforme necessário -->
+
+  <footer>
+    <p>&copy; 2023 Lugares Turísticos da Europa. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
