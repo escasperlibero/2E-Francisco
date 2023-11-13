@@ -1,0 +1,30 @@
+// src/App.js
+
+import React, { useState } from 'react';
+import './App.css';
+
+function App() {
+  // Defina uma variável de estado e a função para atualizá-la
+  const [count, setCount] = useState(0);
+
+  // Função para aumentar o valor da variável de estado
+  const incrementCount = () => {
+    setCount(count + 1);
+  };
+
+  return (
+    <div className="App">
+      <header className="App-header">
+        <h1>Meu Projeto React</h1>
+        
+        {/* Exiba o valor da variável de estado */}
+        <p>Contagem: {count}</p>
+        
+        {/* Botão que aumenta o valor ao ser clicado */}
+        <button onClick={incrementCount}>Aumentar Contagem</button>
+      </header>
+    </div>
+  );
+}
+
+export default App;
