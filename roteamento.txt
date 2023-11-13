@@ -1,0 +1,88 @@
+
+```bash
+npm install react-router-dom
+```
+
+Aqui está um exemplo básico de como você pode criar um componente com roteamento entre duas telas:
+
+1. Crie um novo componente chamado `Home.js` para a página inicial:
+
+```jsx
+// src/components/Home.js
+
+import React from 'react';
+
+const Home = () => {
+  return (
+    <div>
+      <h2>Página Inicial</h2>
+      <p>Bem-vindo à minha aplicação React!</p>
+    </div>
+  );
+}
+
+export default Home;
+```
+
+2. Crie outro componente chamado `About.js` para a página "Sobre":
+
+```jsx
+// src/components/About.js
+
+import React from 'react';
+
+const About = () => {
+  return (
+    <div>
+      <h2>Sobre Nós</h2>
+      <p>Esta é a página Sobre da minha aplicação React.</p>
+    </div>
+  );
+}
+
+export default About;
+```
+
+3. Agora, modifique o `App.js` para incluir o roteamento:
+
+```jsx
+// src/App.js
+
+import React from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import Home from './components/Home';
+import About from './components/About';
+import './App.css';
+
+function App() {
+  return (
+    <Router>
+      <div className="App">
+        <header className="App-header">
+          <h1>Meu Projeto React</h1>
+
+          {/* Adicione links de navegação */}
+          <nav>
+            <ul>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/about">Sobre</Link>
+              </li>
+            </ul>
+          </nav>
+
+          {/* Adicione rotas para os componentes */}
+          <Route path="/" exact component={Home} />
+          <Route path="/about" component={About} />
+        </header>
+      </div>
+    </Router>
+  );
+}
+
+export default App;
+```
+
+Agora, ao executar a aplicação (`npm start`), você deve ver links de navegação para as páginas "Home" e "Sobre", e o conteúdo dos componentes será renderizado conforme você navega entre eles. Lembre-se de anexar esses arquivos na atividade.
